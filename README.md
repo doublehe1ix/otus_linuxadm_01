@@ -35,6 +35,7 @@ make olddefconfig
 * Убираем добавление дополнительных сертификатов из старого конфига
   
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
+
 scripts/config --set-str SYSTEM_REVOCATION_KEYS ""
 * Запускаем сборку с количеством потоков, равным числу доступных CPU
   
